@@ -38,7 +38,6 @@ def preprocessamento(texto): #preparando o texto para ser processado pelo spacy
     lista.append(token.lemma_)
   lista = [palavra for palavra in lista if palavra not in stop_words and palavra not in stop_punct]
   lista = ' '.join([str(elemento) for elemento in lista if not elemento.isdigit()])
-
   return lista
 
 # guardar as sentenças que serão pré-processadas pela função em uma lista
