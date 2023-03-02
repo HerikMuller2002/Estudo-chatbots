@@ -1,0 +1,12 @@
+usuário: Olá
+chatbot: Olá! como posso te ajudar?
+usuário: gostaria de uma pizza
+chatbot: Certo, o que gostaria de pedir?
+usuário: uma pizza portuguesa grande e uma pizza de calabressa pequena
+chatbot: mais alguma coisa?
+usuário: não
+chatbot: qual é o endereço?
+usuário: rua, numero, bairro
+chatbot: pedido feito! 1 pizza portuguesa grande e 1 pizza calabressa pequena. O preço final é de R$ 90,00
+usuário: obrigado
+chatbot: eu que adradeço!

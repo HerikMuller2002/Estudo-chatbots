@@ -1,0 +1,34 @@
+Escopo:
+    - cumprimentar o usuário
+    - ** perguntar o problema
+    - entender o problema relatado
+    - relacionar o problema com possíveis soluções
+        - se houver mais de uma solução: enumerar as soluções e armazenar em uma fila/lista
+        - se houver apenas uma solução : enumerar a solução e armazenar em uma fila/lista com apenas um elemento
+        - se não houver solução: 
+            - mostrar uma mensagem de que a aplicação não conseguiu entender o problema relatado ou não conseguiu encontrar solução
+            - pular para o tópico com '##'
+    - revelar quantas soluções foram encontradas na base de dados
+    - apresentar a primeira solução da fila/lista ao usuário
+    - perguntar se a solução foi útil
+        - se sim: 
+            - armazenar a resposta em um banco de dados para uso futuro (objetivo: melhorar e tornar o sistema mais inteligente)
+            - dar continuidade no sistema
+        - se não:
+            - armazenar a resposta em um banco de dados para uso futuro (objetivo: melhorar e tornar o sistema mais inteligente)
+            - se houver mais soluções na lista: 
+                - apresentar a próxima solução da lista
+            - se não houver mais soluções na lista:
+                - mostrar uma mensagem de que a aplicação não conseguiu encontrar mais soluções
+    - ## perguntar se o usuário precisa de mais alguma ajuda
+        - se sim: o chat recomeça no tópico com '**'
+        - se não: despedida (fim do processo)
+    
+Intenções:
+    - boas-vindas
+    - relato do problema
+    - satisfação com a solução
+    - agradecimento
+
+Entidades:
+    - ...
