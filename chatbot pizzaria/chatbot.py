@@ -8,6 +8,7 @@ from nltk.chat.util import Chat, reflections
 from bs4 import BeautifulSoup # pip install bs4
 from urllib.request import urlopen
 from random import choice, randint
+from sklearn.metrics.pairwise import cosine_similarity # pip install scikit-learn
 
 # pip install lxml => erro de parser
 # python -m spacy download pt_core_news_sm => erro de linguagem
@@ -45,10 +46,13 @@ lista_sentencas_preprocessada = []
 for i in range(len(lista_sentencas)):
   lista_sentencas_preprocessada.append(preprocessamento(lista_sentencas[i]))
 
-textos_boas_vindas_entrada = ('hey', 'olá', 'opa', 'oi', 'eae')
+'''textos_boas_vindas_entrada = ('hey', 'olá', 'opa', 'oi', 'eae')
 textos_boas_vindas_respostas = ('olá, bem-vindo!', 'oi, bem-vindo!')
 
 def responder_saudacao(texto):
   for palavra in texto.split():
     if palavra.lower() in textos_boas_vindas_entrada:
-      return choice(textos_boas_vindas_respostas)
+      return choice(textos_boas_vindas_respostas)'''
+
+teste = lista_sentencas_preprocessada[:3]
+print(teste)
