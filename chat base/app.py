@@ -83,7 +83,7 @@ def responder(texto_usuario):
 
     return resposta_chatbot
   
-'''while True:
+while True:
   texto_usuario = input('Usuário: ').lower()
   if texto_usuario not in textos_saida:
     if responder_saudacao(texto_usuario) != None:
@@ -93,9 +93,9 @@ def responder(texto_usuario):
       lista_sentencas_preprocessada.remove(preprocessamento(texto_usuario))
   else:
     print('Chatbot: Até breve!')
-    break'''
+    break
 
-# api com flask
+'''# api com flask
 app = Flask(__name__)
 @app.route("/<string:txt>", methods=["POST"])
 
@@ -110,4 +110,4 @@ def conversar (txt):
   
   return jsonify({"texto_respondido":resposta})
 
-app.run(port=5000,debug=False)
+app.run(port=5000,debug=False)'''
