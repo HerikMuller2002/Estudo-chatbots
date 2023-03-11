@@ -43,12 +43,12 @@ def preprocessamento(texto): #preparando o texto para ser processado pelo spacy
   texto = re.sub(r" +", ' ',texto)
   # tirar radical (lematização)
   documento = nlp(texto)
-  lista = []
+  input_user = []
   for token in documento:
-    lista.append(token.lemma_)
-  lista = [palavra for palavra in lista if palavra not in stop_words and palavra not in stop_punct]
-  lista = ' '.join([str(elemento) for elemento in lista if not elemento.isdigit()])
-  return lista
+    input_user.append(token.lemma_)
+  input_user = [palavra for palavra in input_user if palavra not in stop_words and palavra not in stop_punct]
+  input_user = ' '.join([str(elemento) for elemento in input_user if not elemento.isdigit()])
+  return input_user
 
 # guardar as sentenças que serão pré-processadas pela função em uma lista
 lista_sentencas_preprocessada = []
